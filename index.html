@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <input type="text" id="username" placeholder="Enter username">
+        <button class="button" onclick="login()">Login</button>
+    </div>
+
+    <div class="app-container" id="appContainer" style="display: none;">
+        <div class="log-history">
+            <h2>Log History</h2>
+            <table id="logTable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Action</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="main-content">
+            <div class="clock" id="clock">Loading...</div>
+            <div class="button-container">
+                <button class="button" id="checkInButton" onclick="checkIn()">Check In</button>
+                <button class="button" id="checkOutButton" onclick="checkOut()" style="display:none;">Check Out</button>
+            </div>
+            <div class="message" id="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

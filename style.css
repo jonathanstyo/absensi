@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #00ff00;
+    background-color: #000;
+    color: #00ff00;
+    outline: none;
+}
+
+.clock {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    font-size: 1em;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #00ff00;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.app-container {
+    display: flex;
+}
+
+.log-history {
+    margin-right: 200px;
+    text-align: center;
+}
+
+.log-history table {
+    width: 300px;
+    border-collapse: collapse;
+}
+
+.log-history table, th, td {
+    border: 1px solid #00ff00;
+}
+
+.log-history th, td {
+    padding: 10px;
+    text-align: center;
+}
